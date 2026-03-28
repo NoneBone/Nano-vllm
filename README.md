@@ -21,7 +21,13 @@ A lightweight vLLM implementation built from scratch.
 ```bash
 pip install git+https://github.com/GeeeekExplorer/nano-vllm.git
 ```
-
+> Suggestion for cuda 11.8 user:
+> 
+> - python 3.10
+> 
+> - torch 2.4 | [download](https://github.com/pytorch/pytorch/blob/main/RELEASE.md#release-cadence) | [online install](https://pytorch.org/get-started/previous-versions/)
+> - flash_attn-v2.7.3 | [download](https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.3/flash_attn-2.7.3+cu11torch2.4cxx11abiFALSE-cp310-cp310-linux_x86_64.whl) | [why need cxx11abiFALSE](https://zhuanlan.zhihu.com/p/1897638897388873200)
+>
 ## Model Download
 
 To download the model weights manually, use the following command:
@@ -30,6 +36,9 @@ huggingface-cli download --resume-download Qwen/Qwen3-0.6B \
   --local-dir ~/huggingface/Qwen3-0.6B/ \
   --local-dir-use-symlinks False
 ```
+- [Use hf but huggingface-cli](https://hugging-face.cn/docs/huggingface_hub/guides/cli)
+
+- [HF model download guide](https://blog.csdn.net/qq_48843954/article/details/151867968)
 
 ## Quick Start
 
