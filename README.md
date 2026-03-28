@@ -69,7 +69,27 @@ See `bench.py` for benchmark.
 | vLLM           | 133,966     | 98.37    | 1361.84               |
 | Nano-vLLM      | 133,966     | 93.41    | 1434.13               |
 
+## TODO List
 
-## Star History
+### Easy(week 1)
 
-[![Star History Chart](https://api.star-history.com/svg?repos=GeeeekExplorer/nano-vllm&type=Date)](https://www.star-history.com/#GeeeekExplorer/nano-vllm&Date)
+- [ ] CHANGE: sample strategy 
+- [ ] CHANGE: kv cache pre-allocated size
+- [ ] BREAK: latency and memory using
+- [ ] PLOT: draw data flow by hand
+
+### Medium(week 2)
+
+- [ ] READ: SOSP'23: PageAttn 
+- [ ] READ: OSDI'22: A distributed serving system for TBGM
+- [x] READ: Flash-attn-v1
+- [ ] READ: Flash-attn-v2
+- [ ] READ: Flash-attn-v3
+- [ ] READ: Flash-attn-v4
+
+### Hard(week 3)
+
+- [ ] READ: vLLM, read module by module.
+- [ ] FEAT: answer request continuously
+- [ ] FEAT: page attn change
+- [ ] FEAT: draft generation and validation
